@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "243de72a-d912-46f2-b3de-b2c82d55770b",
+		"name": "new Spirng Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "new register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nim",
+							"value": "K3515004",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Aditya",
+							"type": "text"
+						},
+						{
+							"key": "midName",
+							"value": "Nugraha",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Pradana",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Jakarta Timur",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1996-08-14",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/IgnasiusLeonardo/Pictures/ddtbsbm-01fc2dd0-3344-4a3b-8416-e86e5a078006.png"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/student/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"student",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nim",
+							"value": "K3515002",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Abdullah",
+							"type": "text"
+						},
+						{
+							"key": "midName",
+							"value": "Aflaha",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Aslam",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Surakarta",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "1996-05-31",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/IgnasiusLeonardo/Pictures/kamui.jpg"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/student/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"student",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "download file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/student/downloadFile/K3515032.png",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"student",
+						"downloadFile",
+						"K3515032.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudentById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/student/delete/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"student",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/student/showall",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"student",
+						"showall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/student/search/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"student",
+						"search",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
